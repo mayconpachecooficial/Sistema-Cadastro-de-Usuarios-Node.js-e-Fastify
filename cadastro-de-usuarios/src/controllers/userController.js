@@ -1,3 +1,8 @@
+// O código define a função registerUser para registrar um novo usuário, 
+// validando e-mail e senha antes de criptografar a senha e salvar os dados 
+// do usuário com um UUID único no banco de dados. 
+// Após o registro, envia um e-mail de confirmação ao usuário.
+
 const { createUser } = require('../models/userModel');
 const { sendConfirmationEmail } = require('../services/emailService');
 const { hashPassword, validateEmail, validatePassword, generateUUID } = require('../utils/validation');

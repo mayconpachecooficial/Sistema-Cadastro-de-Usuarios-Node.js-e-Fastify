@@ -4,6 +4,7 @@
 
 const db = require('../utils/database');
 
+
 const createUser = async (user) => {
   const { name, lastName, email, passwordHash, document, affiliatedId } = user;
   const sql = `
